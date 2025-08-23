@@ -20,7 +20,7 @@ export class Api {
 		};
 	}
 
-	protected handleResponse(response: Response): Promise<object> {
+	/*protected handleResponse(response: Response): Promise<object> {
 		if (response.ok) {
 			return response.json();
 		} else {
@@ -29,7 +29,13 @@ export class Api {
 				return Promise.reject(new Error(error));
 			});
 		}
-	}
+	}*/
+
+	 protected handleResponse(response: Response): Promise<object> {
+        if (response.ok) return response.json();
+        else return response.json()
+            .then(data => Promise.reject(data.error ?? response.statusText));
+    }
 
 	get(uri: string) {
 		return fetch(this.baseUrl + uri, {
