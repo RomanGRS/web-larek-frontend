@@ -1,7 +1,9 @@
 node_modules
 dist
+source
 .env
 .yarn
 .idea
 .vscode
 *.log
+desktop.ini
