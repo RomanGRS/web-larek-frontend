@@ -17,8 +17,7 @@ UML weblarek - `https://app.creately.com/d/wuI36UfhiGi/edit`
 - src/utils/constants.ts — файл с константами
 - src/utils/utils.ts — файл с утилитами
 
-
-https://github.com/RomanGRS/web-larek-frontend.git
+ https://romangrs.github.io/web-larek-frontend/
 
 ## Установка и запуск
 Для установки и запуска проекта необходимо выполнить команды
