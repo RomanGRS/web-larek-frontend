@@ -249,7 +249,7 @@ events.on('modal:close', () => {
 });
 
 // Получаем лоты с сервера
-/*api
+api
 	.getProductList()
 	.then((data) => {
 		console.log('Полученные данные:', data);
@@ -257,11 +257,4 @@ events.on('modal:close', () => {
 	})
 	.catch((err) => {
 		console.error('Ошибка при получении данных:', err);
-	});*/
-
-// Получаем лоты с сервера
-api.getProductList()
-  .then(appData.setCatalog.bind(appData))
-  .catch(err => {
-    console.error(err);
-});
+	});
