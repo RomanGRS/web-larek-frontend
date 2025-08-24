@@ -48,9 +48,6 @@ export class Api {
 }*/
 
 
-
-
-
 export type ApiListResponse<Type> = {
     total: number,
     items: Type[]
